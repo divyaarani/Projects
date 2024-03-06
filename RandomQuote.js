@@ -1,0 +1,38 @@
+var quotes = [`“Character is power.” — Booker T. Washington`,
+`“Never be limited by other people\’s limited imaginations.” — Mae Jemison`,
+`“Only a life lived for others is a life worthwhile.” — Albert Einstein`,
+`“The only impossible journey is the one you never begin.” — Tony Robbins`,
+`“If you fell down yesterday, stand up today.” — H. G. Wells`,
+`“Fortune favors the bold.” — Virgil`,
+`“I think, therefore I am.” — René Descartes`,
+`“Time is money.” — Benjamin Franklin`,
+`“I came, I saw, I conquered.” — Julius Caesar`,
+`“When life gives you lemons, make lemonade.” — Elbert Hubbard`,
+`“Practice makes perfect.” — Vince Lombardi`,
+`“Knowledge is power.” — Francis Bacon`,
+`“You have within you, right now, everything you need to deal with whatever the world can throw at you.” — Brian Tracy`,
+`“Spread love everywhere you go. Let no one ever come to you without leaving happier.” — Mother Teresa.`,
+`“Try not to become a man of success, but rather try to become a man of value.” — Albert Einstein.`,
+`“Don\’t be afraid to give up the good to go for the great.” — John D. Rockefeller.`,
+`“Success is walking from failure to failure with no loss of enthusiasm.” — Winston S. Churchill.`,
+`“In the middle of difficulty lies opportunity.” — Albert Einstein.`,
+`“That which does not kill us makes us stronger.” — Friedrich Nietzsche.`,
+`“I think, therefore I am.” — René Descartes.`,
+`“Whenever you find yourself on the side of the majority, it is time to pause and reflect.” — Mark Twain.`,
+`“Be yourself; everyone else is already taken.” — Oscar Wilde.`,
+`“The journey of a thousand miles begins with one step.” — Lao Tzu.`,
+`“I\’ve failed over and over and over again in my life, and that is why I succeed.” — Michael Jordan.`,
+`“It does not matter how slowly you go so long as you do not stop.” — Confucius.`,
+`“It\’s not whether you get knocked down, it\’s whether you get up.” — Vince Lombardi.`,
+`“Go confidently in the direction of your dreams. Live the life you have imagined.” — Henry David Thoreau.`,
+`“You miss 100 percent of the shots you never take.” — Wayne Gretzky.`,
+`“Nonviolence is a weapon of the strong.” — Mahatma Gandhi.`,
+`“Peace begins with a smile.” — Mother Teresa.`,
+`“Stay hungry, stay foolish.” — Steve Jobs.`,
+`“Good artists copy, great artists steal.” — Pablo Picasso.`,
+]
+
+function newQuote(){
+    var randomNumber = Math.floor(Math.random() * (quotes.length));
+    document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+}

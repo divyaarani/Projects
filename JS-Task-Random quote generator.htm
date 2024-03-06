@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Merienda:wght@300..900&display=swap');
+.image-container{
+            position: relative;        
+
+        }
+        .im{
+            margin-left: 50px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            
+        }
+        .overlay {
+            position: absolute;
+            left: 20%;
+            right: 30%;
+            bottom: 80px;
+            padding: 20px;
+            margin-bottom: 10px;
+            height: 600px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: rgb(252, 252, 252);
+            opacity: 0.6;
+            color: black;
+            z-index: 2;
+        }
+        #quoteDisplay{    
+            padding: 60px;
+            margin-top: 10%;        
+            font-family: "Merienda", cursive;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            font-size:300%;
+            text-align: center;
+            text-wrap:wrap;         
+
+        }
+
+.btn{
+    font-size:large;
+    padding: 15px;
+    margin-top: 10%;
+    color: whitesmoke;
+    background-color:#8522a3cb;
+    border-radius: 25%;
+}
+h1{
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(180deg,rgb(10, 10, 226), rgba(166, 0, 255, 0.856))
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="image-container">
+            <h1>Random Quote Generator</h1>
+            <hr>
+            <img class="im" src="https://th.bing.com/th/id/R.14ab0af50a9f9f3bd334dbc2dc8e4139?rik=PO7fuNYx6l8JLA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fWonderful-Nature-Colorful-Scene-HD.jpg&ehk=0HrJNBc%2bzz5o2AEdayde46yRrDdvVexZ3cYpe67%2bL%2fo%3d&risl=&pid=ImgRaw&r=0" width="90%" alt="No image"/>
+            <div class="overlay">
+            <div id="quoteDisplay"></div>            
+            <button class="btn" onclick="newQuote()">New Quote</button>
+        </div>
+        </div>
+    </header>
+    
+    <script src="RandomQuote.js"></script>
+
+</body>
+</html>
